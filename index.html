@@ -12,143 +12,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      /* 1st half */
       .bg {
-        background-color: #e4e8eb;
+        background-color: #ffffff;
       }
-      .bg1 {
-        background-color: white;
-        /* border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px; */
-        font-size: 14px;
-        font-weight: 600;
-        padding: 100px;
-      }
-      .bg2 {
-        /* border-top-right-radius: 20px;
-        border-bottom-right-radius: 20px; */
-        background-color: rgb(142, 142, 142);
-        display: grid;
-        justify-content: center;
-        align-content: center;
-      }
-      .padding {
-        padding-top: 100px;
-      }
-      .head {
-        font-weight: 600;
-        font-size: 30px;
-      }
-      .head1 {
-        color: #313131;
-        font-size: 14px;
-        opacity: 50%;
-      }
-      .inline {
-        display: flex;
-        justify-content: space-between;
-      }
-      .inline1-1 {
-        display: flex;
-        column-gap: 10px;
-      }
-      .inline1-2 {
-        display: flex;
-        column-gap: 5px;
-        justify-content: center;
-      }
-      .button {
-        display: grid;
-      }
-      /* 1st half */
-      /* 2nd half */
-
-      /* 2nd half */
+     .navbar-collapse{
+      display: flex;
+      justify-content: end;
+     }
     </style>
   </head>
   <body class="bg">
-    <div class="container padding">
+    <div class="container">
+      <!-- nav -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light nav-items">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">TO-DO</a>
+          <button
+            class="navbar-toggler "
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">View all Todo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="add.html">Add Todo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="search.html">Search Todo</a>
+              </li>
+              <div class="nav-item">
+              <a class="nav-link" href="sign-in.html"
+                ><button type="button" class="btn btn-primary">Login</button></a
+              >
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <br /><br />
+
+      <!-- nav -->
       <div class="row">
         <div
-          class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12"
+          class="col col-12col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12"
         >
-          <div class="row g-3">
-            
-            <!-- 2st half -->
-            <div
-              class="col col-12col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 bg2"
-            >
-              <img
-                src="https://www.svgrepo.com/show/384674/account-avatar-profile-user-11.svg"
-                alt=""
-                height="300px"
-                width="300px"
-              />
-            </div>
-            <!-- 2st half -->
-            <!-- 1st half -->
-            <div
-              class="col col-12col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 bg1"
-            >
-              <div
-                class="col col-12col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 head"
-              >
-                Welcome
-              </div>
-              <div
-                class="col col-12col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 head1"
-              >
-                Please login your Account
-              </div>
-              <br /><br />
-              <div
-                class="col col-12col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12"
-              >
-                <label for="" class="form-labell">UserName</label>
-                <input type="text" class="form-control" />
-              </div>
-              <br />
-              <div
-                class="col col-12col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12"
-              >
-                <label for="" class="form-labell">Password</label>
-                <input type="password" class="form-control" />
-              </div>
-              <!-- boxing -->
-              <div
-                class="col col-12col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 inline"
-              >
-                <div
-                  class="col col-12 col-sm-7 col-md-7 col-lg-7 col-xl-7 col-xxl-7 inline1-1"
-                >
-                  <input type="checkbox" class="form-check" />
-
-                  <div
-                    class="col col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10"
-                  >
-                    <label for="" class="form-labell">Remember password</label>
-                  </div>
-                </div>
-              </div>
-              <!-- boxing -->
-              <br />
-              <div
-                class="col col-12col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 button"
-              >
-                <button type="button" class="btn btn-dark">Log in</button>
-              </div>
-              <br />
-              <div
-                class="col col-12col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 button"
-              >
-                <div class="inline1-2">
-                  <div>Don't have account?</div>
-                  <a href="create.html">Sign up now</a>
-                </div>
-              </div>
-            </div>
-            <!-- 1st half -->
-          </div>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">sl no</th>
+                <th scope="col">Title</th>
+                <th scope="col">Description</th>
+                <th scope="col">Remarks</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>LINKURCODES</td>
+                <td>Task Submission</td>
+                <td>DATE : 21/04/2024</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>LINKURCODES</td>
+                <td>Task Submission</td>
+                <td>DATE : 21/04/2024</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>LINKURCODES</td>
+                <td>Task Submission</td>
+                <td>DATE : 21/04/2024</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>LINKURCODES</td>
+                <td>Task Submission</td>
+                <td>DATE : 21/04/2024</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>LINKURCODES</td>
+                <td>Task Submission</td>
+                <td>DATE : 21/04/2024</td>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td>LINKURCODES</td>
+                <td>Task Submission</td>
+                <td>DATE : 21/04/2024</td>
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <td>LINKURCODES</td>
+                <td>Task Submission</td>
+                <td>DATE : 21/04/2024</td>
+              </tr>
+              <tr>
+                <th scope="row">8</th>
+                <td>LINKURCODES</td>
+                <td>Task Submission</td>
+                <td>DATE : 21/04/2024</td>
+              </tr>
+              <tr>
+                <th scope="row">9</th>
+                <td>LINKURCODES</td>
+                <td>Task Submission</td>
+                <td>DATE : 21/04/2024</td>
+              </tr>
+              <tr>
+                <th scope="row">10</th>
+                <td>LINKURCODES</td>
+                <td>Task Submission</td>
+                <td>DATE : 21/04/2024</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
